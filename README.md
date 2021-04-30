@@ -39,7 +39,7 @@
 :black_circle: :black_circle:
 ##### Se S1 == Preto E S2 == Preto { Frente/ Verficar Direita 90 graus Se {S1 == Preto} Senao {Volta Direita Verficar Esquerda 90 graus Se {S2 == Preto} Senao {Volta Esquerda Frente }}
 <br></br>
-#### Fase de teste
+####
 <br></br>
 ## Lógica 5 sensores :flags:
 <br></br>
