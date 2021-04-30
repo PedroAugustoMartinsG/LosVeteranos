@@ -1,11 +1,12 @@
 # OBR 2021 :trophy:
 
-## Parte 1 - Seguidor de linha preto :memo:
-- [x] Seguidor de linha Preto 2 sensores
-- [x] Seguidor de linha Preto 5 sensores
-- [x] Implementar sistema 1
-- [x] Implementar sistema 2
-
+## Metas:memo:
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
 <br></br>
 ## Lógica 2 sensores :flags:
 <br></br>
