@@ -1,4 +1,4 @@
-# Sbotics-OBR :trophy:
+# OBR 2021 :trophy:
 
 ## Parte 1 - Seguidor de linha preto :memo:
 - [x] Seguidor de linha Preto 2 sensores
