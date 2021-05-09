@@ -1,7 +1,7 @@
 # OBR 2021 :trophy:
 
 ## Metas:memo:
-- [ ] Enterder OBR
+- [ ] Entender OBR
 - [ ] Seguidor de Linhas
 - [ ] 
 - [ ] 
