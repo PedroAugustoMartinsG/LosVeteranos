@@ -4,6 +4,7 @@
 <br></br>
 ##### Sensor 1 = Direita
 ##### Sensor 2 = Esquerda
+##### Sensor 3 = Frente
 <br></br>
 ### Casos Básicos
 :white_circle: :black_circle:
