@@ -33,14 +33,12 @@
 ####
 <br></br>
 ## Lógica 5 sensores :flags:
-<br></br>
 ### Sensores:
 ##### Sensor 1 = Direita
 ##### Sensor 2 = Direita
 ##### Sensor 3 = Frente
 ##### Sensor 4 = Esquerda
 ##### Sensor 5 = Esquerda
-##### SensorCont = Valor do contador Para (Verificações)
 <br></br>
 ### Sensores para rotacionar 90° direita:
 ##### Sensor 1 = "PRETO"
