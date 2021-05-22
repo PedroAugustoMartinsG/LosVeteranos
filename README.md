@@ -1,7 +1,6 @@
 # OBR 2021 :trophy:
 <br></br>
 ## Lógica 2 sensores :flags:
-<br></br>
 ##### Sensor 1 = Direita
 ##### Sensor 2 = Esquerda
 ##### Sensor 3 = Frente
