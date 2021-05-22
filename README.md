@@ -12,12 +12,12 @@
 :black_circle: :black_circle:
 ##### Se S1 == Preto E S2 == Preto { Frente }
 <br></br>
-### Sendores para rotacionar 90° direita:
+### Sensores para rotacionar 90° direita:
 ##### Sensor 1 = "PRETO" 
 ##### Sensor 2 = "BRANCO" 
 ##### Sensor 3 = "BRANCO"
 <br></br>
-### Sendores para rotacionar 90° esquerda:
+### Sensores para rotacionar 90° esquerda:
 ##### Sensor 1 = "BRANCO" 
 ##### Sensor 2 = "PRETO" 
 ##### Sensor 3 = "BRANCO"
