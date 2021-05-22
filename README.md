@@ -1,12 +1,4 @@
 # OBR 2021 :trophy:
-
-## Metas:memo:
-- [ X ] Entender OBR
-- [ ] Seguidor de Linhas
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
 <br></br>
 ## Lógica 2 sensores :flags:
 <br></br>
