@@ -34,31 +34,26 @@
 <br></br>
 ## Lógica 5 sensores :flags:
 <br></br>
-### Sendores:
-:white_circle: :black_circle:
+### Sensores:
 ##### Sensor 1 = Direita
-##### Sensor 2 = >Direita
+##### Sensor 2 = Direita
 ##### Sensor 3 = Frente
-##### Sensor 4 = >Esquerda
+##### Sensor 4 = Esquerda
 ##### Sensor 5 = Esquerda
 ##### SensorCont = Valor do contador Para (Verificações)
 <br></br>
-### Sendores para rotacionar 90° direita:
+### Sensores para rotacionar 90° direita:
 ##### Sensor 1 = "PRETO"
 ##### Sensor 2 = "PRETO"
 ##### Sensor 3 = "PRETO"
 ##### Sensor 4 = "BRANCO"
 ##### Sensor 5 = "BRANCO"
 <br></br>
-### Sendores para rotacionar 90° esquerda:
+### Sensores para rotacionar 90° esquerda:
 ##### Sensor 1 = "BRANCO"
 ##### Sensor 2 = "BRANCO"
 ##### Sensor 3 = "PRETO"
 ##### Sensor 4 = "PRETO"
 ##### Sensor 5 = "PRETO"
-<br></br>
-### Casos Básicos
-:white_circle: :white_circle: :black_circle: :white_circle: :white_circle:
-##### Se S3 == Preto E SN != Preto { frente }
 <br></br>
 ##### ... :pencil2:
