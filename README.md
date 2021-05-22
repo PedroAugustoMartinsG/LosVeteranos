@@ -9,8 +9,8 @@
 ##### Se S1 == Preto E S2 != Preto { Virar Direita até S1 != Preto }
 :black_circle: :white_circle:
 ##### Se S1 != Preto E S2 == Preto { Virar Esquerda até S2 != Preto}
-:black_circle: :black_circle:
-##### Se S1 == Preto E S2 == Preto { Frente }
+:white_circle: :white_circle:
+##### Se S1 == Branco E S2 == Branco { Frente }
 <br></br>
 ### Sensores para rotacionar 90° direita:
 ##### Sensor 1 = "PRETO" 
