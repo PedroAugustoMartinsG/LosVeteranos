@@ -1,0 +1,115 @@
+#CODIGO DO SEGUIDOR DE LINHAS DO ROBO DE 2 SENSORES 
+#falta calibrar quando usar a curva 90° esquerda
+
+numero aux=0                 # Váriavel auxiliar presente no vefCurva90()
+numero aux2=0                # Váriavel auxiliar presente no vef2Curva90()
+numero aux3=0                # Váriavel auxiliar presente no vef2Curva90()
+numero aux4=0                # Váriavel auxiliar presente no vefCurva90()
+numero direcaoDir=0          # Verifica se o robo está parado
+numero direcaoEsq=1          # Verifica se o robo está parado
+booleano flag = verdadeiro   # Váriavel auxiliar presente no vefCurva90()
+
+
+tarefa Sensor # Retorno dos sensores do robo 
+{
+   escrever(1, cor(1))       # Sensor esquerdo
+   escrever(2, cor(2))       # Sensor direito
+}
+
+tarefa vefCurva90 # Verifica se há curva de 90° à direita
+{ 
+    escrever(3, "Verificando se há curva de 90° à direita!") # Valida somente quando 10° < angulo < 30°
+    rotacionar(200, 8) # Rotaciona um pouco para verificar se há curva 90° à direita
+    aux=8
+    Sensor()
+
+    enquanto ((flag) e (aux<33)) farei # Verificador curva 90° à direita
+    {
+        escrever(3, "Verificando...") 
+        rotacionar(200,2) # Rotaciona um pouco para verificar se há curva 90° à direita
+        Sensor()
+        aux=aux+2 # Soma até realizar 16x a rotação
+        se (cor(1)=="PRETO") entao # Robo faz curva de 90° à direita
+        {
+            escrever(3, "Curva de 90°()")
+            rotacionar(500, negativo(aux)) # Volta a posição inicial após as tantas rotações
+            frente(120)
+            esperar(600)
+            rotacionar(500,aux4) # Dependendo de qual sensor o robo indentificou
+            tras(500)
+            esperar(100)
+            frente(80)
+            esperar(600)
+            flag=falso # Finaliza a repeticao          
+        } senao
+        {
+            rotacionar(500, negativo(aux)) # Não era curva 90°
+        }        
+    }
+}
+
+tarefa vef2Curva90 # Verifica se há curva 90 quando o robô fica perdido (indo da direita a esquerda)
+{ 
+    aux3=modulo(direcaoDir-direcaoEsq) # Verifica se vai ficar parado
+    se ((aux2>4) e (aux3<50)) entao
+    {
+        escrever(3, "Provavelmente há Curva de 90°!")
+        vefCurva90()
+        aux2=0
+    }
+}
+
+tarefa VirarDireita #Robo vira à direita
+{
+    aux2=aux2+1 # Ver se o robô fica parado
+    aux4=90
+    direcaoDir=direcao() # Armazena a posição para vef2Cruva90
+    Sensor()
+    vef2Curva90()
+	escrever(3, "Direita()")
+    direita(800)
+    esperar(230)   
+    Sensor()
+    frente(70)    
+}
+
+tarefa VirarEsquerda #Robo vira à esquerda
+{
+    aux2=aux2+1 # Ver se o robô fica parado
+    aux4=negativo(90)
+    direcaoEsq=direcao() # Armazena a posição para vef2Cruva90
+    Sensor()
+    vef2Curva90()
+	escrever(3, "Esquerda()")
+    esquerda(800)
+    esperar(230) 
+    Sensor()
+    frente(70)   
+}
+
+inicio
+    enquanto (verdadeiro) farei #Repetição infinita
+    {
+        se ((cor(1)=="BRANCO") e (cor(2)=="BRANCO")) entao #Robo dá arrancada
+        {   
+            Sensor()
+		    escrever(3, "Frente()")
+            frente(120)
+            aux2=0 #Anula verificação de curva 90
+        }     
+
+        se ((cor(1)=="BRANCO") e (cor(2)=="PRETO")) entao #Robo vira à esquerda
+        {   
+            VirarEsquerda()
+        }
+
+        se ((cor(1)=="PRETO") e (cor(2)=="BRANCO")) entao #Robo vira à direita ou à 90°
+        {      
+            VirarDireita() 
+        } 
+
+
+
+
+    }
+fim
